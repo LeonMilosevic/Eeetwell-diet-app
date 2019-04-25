@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Diet App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Diet App</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="script/msc-style.css">
+	<link rel="stylesheet" type="text/css" href="css/dietAppCss.css">
+</head>
+
+<body>
+	<div class="container" id="container">
+
+		<div class="row">
+			<div class="col s12">
+				<a href="http://www.eeetwell.com" alt="eeetwell logo" target="_blank">
+					<img class="header__logo left-to-right" src="imgs/eeetwell_logo_mobile.jpg" alt="eeetwell_logo"></a>
+				<h2 class="header__header"> eeetwell Calorie App </h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<!-- Dropdown Trigger -->
+				<button class='dropdown-button btn move-left' data-activates='dropdown1'
+					data-beloworigin="true">eeetwell
+					menu</button>
+				<nav>
+					<a class="nav-wrapper">
+						<a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"
+							id="side-nav"></a>
+						<a href="#" class="brand-logo">eeetwell food menu</a>
+
+						<ul class="side-nav grey darken-2" id="mobile-demo">
+
+
+
+							<li class="white">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header waves-effect waves-blue">
+											<i class="fas fa-utensils"></i>Wraps<i class="material-icons right"
+												style="margin-right:0;">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul id="mobile-wraps">
+
+												<li>
+													<div class="divider"></div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="white">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header waves-effect waves-blue">
+											<i class="fas fa-utensils"></i>Ciabattas<i class="material-icons right"
+												style="margin-right:0;">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul id="mobile-ciabattas">
+												<li>
+													<div class="divider"></div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="white">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header waves-effect waves-blue">
+											<i class="fas fa-utensils"></i>Salads<i class="material-icons right"
+												style="margin-right:0;">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul id="mobile-salads">
+												<li>
+													<div class="divider"></div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="white">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header waves-effect waves-blue">
+											<i class="fas fa-utensils"></i>Rice<i class="material-icons right"
+												style="margin-right:0;">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul id="mobile-rices">
+												<li>
+													<div class="divider"></div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="white">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header waves-effect waves-blue">
+											<i class="fas fa-blender"></i>Smoothies<i
+												class="material-icons right"
+												style="margin-right:0;">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul id="mobile-smoothies">
+												<li>
+													<div class="divider"></div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="white">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header waves-effect waves-blue">
+											<i class="fas fa-blender"></i>Juices<i
+												class="material-icons right"
+												style="margin-right:0;">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul id="mobile-juices">
+												<li>
+													<div class="divider"></div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="white">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header waves-effect waves-blue">
+												<i class="fas fa-blender"></i>Power Lifters<i
+												class="material-icons right"
+												style="margin-right:0;">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul id="mobile-powerLifters">
+												<li>
+													<div class="divider"></div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+					</a>
+				</nav>
+
+				<ul id='dropdown1' class='dropdown-content dropdown-nested'>
+					<li><a class='dropdown-button' href='#' data-activates='dropdown2' data-hover="hover"
+							data-alignment="left">Food<span class="right-triangle">&#9656;</span></a></li>
+					<li><a class='dropdown-button' href='#' data-activates='dropdown7' data-hover="hover"
+							data-alignment="left">Smoothies<span class="right-triangle">&#9656;</span></a></li>
+				</ul>
+
+				<ul id='dropdown2' class='dropdown-content dropdown-nested'>
+					<li><a class='dropdown-button' href="#" data-activates="dropdown3" data-hover="hover"
+							data-alignment="left">Wraps<span class="right-triangle">&#9656;</span></a></li>
+					<li><a class='dropdown-button' href="#" data-activates="dropdown4" data-hover="hover"
+							data-alignment="left">Ciabattas<span class="right-triangle">&#9656;</span></a></li>
+					<li><a class='dropdown-button' href="#" data-activates="dropdown5" data-hover="hover"
+							data-alignment="left">Salads<span class="right-triangle">&#9656;</span></a></li>
+					<li><a class='dropdown-button' href="#" data-activates="dropdown6" data-hover="hover"
+							data-alignment="left">Rices<span class="right-triangle">&#9656;</span></a></li>
+				</ul>
+				<!-- Food item Menu -->
+				<ul id='dropdown3' class='dropdown-content'>
+				</ul>
+
+				<ul id='dropdown4' class='dropdown-content'>
+				</ul>
+
+				<ul id='dropdown5' class='dropdown-content'>
+				</ul>
+
+				<ul id='dropdown6' class='dropdown-content'>
+				</ul>
+				<!-- Smoothies -->
+
+				<ul id='dropdown7' class='dropdown-content dropdown-nested'>
+					<li><a class='dropdown-button' href="#" data-activates="dropdown8" data-hover="hover"
+							data-alignment="left">Smoothies<span class="right-triangle">&#9656;</span></a></li>
+					<li><a class='dropdown-button' href="#" data-activates="dropdown9" data-hover="hover"
+							data-alignment="left">Juices<span class="right-triangle">&#9656;</span></a></li>
+					<li><a class='dropdown-button' href="#" data-activates="dropdown10" data-hover="hover"
+							data-alignment="left">Power Lifters<span class="right-triangle">&#9656;</span></a></li>
+				</ul>
+
+				<ul id='dropdown8' class='dropdown-content'>
+				</ul>
+
+				<ul id='dropdown9' class='dropdown-content'>
+				</ul>
+
+				<ul id='dropdown10' class='dropdown-content'>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="card move-right" id="card">
+					<div class="card-content white-text">
+						<span class="card-title">Do you want to know your body calorie intake?</span>
+						<form id="weightForm">
+							<div class="input-field">
+								<input id="yourWeight" type="number" class="validate"
+									placeholder="Add your weight in Kg">
+							</div>
+							<ul class="collection" id="foodCollection">
+							</ul>
+							<button id="calculate-button" class="btn waves-effect waves-light">Calculate</button>
+							<button id="clear-button" class="btn waves-effect waves-light secondary-content">Clear
+								All</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12">
+				<div class="progress">
+					<div class="indeterminate"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="counter">
+			<div class="col s12">
+				<div class="card flash-in" id="optimalCalories">
+					<div class="card-content center-align">
+						<h4 id="headerBottom" class="header__h4-bottom">See your goal!</h5>
+					</div>
+					<div class="card-tabs">
+						<ul class="tabs tabs-fixed-width">
+							<li class="tab tabsHide"><a href="#test4">Weight Loss</a></li>
+							<li class="tab tabsHide"><a class="active" href="#test5">Maintain
+									Weight</a></li>
+							<li class="tab tabsHide"><a href="#test6">Gains</a></li>
+						</ul>
+					</div>
+					<div class="card-content grey lighten-4">
+						<div class="remove-item" id="test4"><span class="small-text">Please note: Daily calorie intake
+								is
+								based for average human</span></div>
+						<div class="remove-item" id="test5"><span class="small-text">Please note: Daily calorie intake
+								is
+								based for average human</span></div>
+						<div class="remove-item" id="test6"><span class="small-text">Please note: Daily calorie intake
+								is
+								based for average human</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="script/msc-script.js"></script>
+	<script type="text/javascript" src="js/dietApp.js"></script>
+	<script type="text/javascript" src="js/dietAppObj.js"></script>
+</body>
+
+</html>

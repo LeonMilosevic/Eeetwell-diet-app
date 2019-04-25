@@ -1,0 +1,14 @@
+{
+  "name": "diet-app",
+  "version": "1.0.0",
+  "description": "Style and Animations for Eeetwell Diet App",
+  "main": "dietApp.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/dietAppCss.css -w"
+  },
+  "author": "Leon Milosevic",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
